@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap 101 Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- Student Input Section -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12"> </div>
+  </div>
+</div>
+
+<!-- Student Results Section -->
+<div class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#">Student Watch <span class="glyphicon glyphicon-barcode"></span></a> </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Record Attendance  <span class="glyphicon glyphicon-pencil"></span></a></li>
+        <li><a href="#addStudent">Add New Student  <span class="glyphicon glyphicon-user"></span></a></li>
+        <li><a href="#report">Reports  <span class="glyphicon glyphicon-book"></span></a></li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+    
+    <h2>Record Attendance</h2>
+    <p>Begin typing a student's first or last name. Select 'Attended' for each of the students who have attended this week. To add a previous week click 'Add Other Date' button.</p>
+    
+    
+    
+    
+    
+      <div class="panel panel-primary"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">Student Results</div>
+       
+        <div class="panel-body">
+          <div class="input-group"> <span class="input-group-addon">Student Name</span>
+            <input type="text" class="form-control" placeholder="Student Name">
+          </div>
+        </div>
+        
+          
+          <!-- Table -->
+          <table class="table">
+            <tr>
+              <th>Student Name</th>
+              <th>Last Attended</th>
+              <th></th>
+            </tr>
+            <tr class="">
+              <td>Sandra Jenkins</td>
+              <td>Last Week</td>
+              <td><div class="btn-group btn-group-xs">
+                  <button type="button" class="btn btn-default">Attended</button>
+                  <button type="button" class="btn btn-default">Add Other Date</button>
+                </div></td>
+            </tr>
+            <tr class="">
+              <td>Holly Bopkins</td>
+              <td>2 Weeks Ago</td>
+              <td><div class="btn-group btn-group-xs">
+                  <button type="button" class="btn btn-default">Attended</button>
+                  <button type="button" class="btn btn-default">Add Other Date</button>
+                </div></td>
+            </tr>
+            <tr class="">
+              <td>Sandra Jenkins</td>
+              <td>2 Weeks Ago</td>
+              <td><div class="btn-group btn-group-xs">
+                  <button type="button" class="btn btn-default">Attended</button>
+                  <button type="button" class="btn btn-default">Add Other Date</button>
+                </div></td>
+            </tr>
+            <tr class="danger">
+              <td>Murray Conrad</td>
+              <td>10 Weeks Ago</td>
+              <td><div class="btn-group btn-group-xs">
+                  <button type="button" class="btn btn-default">Attended</button>
+                  <button type="button" class="btn btn-default">Add Other Date</button>
+                </div></td>
+            </tr>
+            <tr class="">
+              <td>Bob Lucas</td>
+              <td>Last Week</td>
+              <td><div class="btn-group btn-group-xs">
+                  <button type="button" class="btn btn-default">Attended</button>
+                  <button type="button" class="btn btn-default">Add Other Date</button>
+                </div></td>
+            </tr>
+          </table>
+        </div>
+    
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://code.jquery.com/jquery.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+
+
+
+<script>
+
+
+
+http_request.onreadystatechange = function() {
+    process_cellrw(http_request);
+};
+http_request.open('GET',"https://docs.google.com/spreadsheet/ccc?key=0Asz4PWJnjucRdHY4X25jNjNwWHh3LUpMWWRXTWhPQkE", true);
+http_request.setRequestHeader('Authorization','Bearer ' + strAccessToken);
+http_request.send(null);
+
+</script>
+
+
+</body>
+</html>
